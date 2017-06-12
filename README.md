@@ -4,8 +4,7 @@
 
 
 # Manual do Jogo
-	Jogador
-		Começa com 3 vidas
+	O Jogador começa com 3 vidas.
 
 	Movimentação:
 		Teclas UP ou W para movimentar-se para cima 
