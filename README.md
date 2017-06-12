@@ -14,7 +14,7 @@
 
 	Recursos:
 		Tecla SPACE para atirar
-		Teclas SHIFT ou Z (e segurar) para deixar em slow motion (cuidado! após utilizar, deverá esperar 10s 
+		Teclas SHIFT ou Z (e segurar) para deixar em slow motion (cuidado! após utilizar, deverá esperar 10s
 		para utilizar novamente)
 
 	Alienigenas:
