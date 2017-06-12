@@ -33,7 +33,7 @@ public class Board extends JPanel implements Runnable, Commons {
     private int DELAY = 15;
     private int vel = 1;
     private int row = 1;
-    private int col = 1;
+    private int col = 7;
     private int level = 0;
     private int nivel = 1;
     private int velo = 0;
@@ -206,9 +206,9 @@ public class Board extends JPanel implements Runnable, Commons {
 	            Font small = new Font("ArialBlack", Font.BOLD, 14);
 	            g.setFont(small);
 	            g.drawString("SCORE " + score, 10, 764);
-	            g.drawString("LEVEL " + (level-1), 100, 764);
+	            g.drawString("LEVEL " + (level), 115, 764);
 	            if(level >= 4){
-	            	g.drawString("BOSS LIFE " + vidasA, 175, 764);
+	            	g.drawString("BOSS LIFE " + vidasA, 185, 764);
 	            }
 
 		        if(slow == false){
@@ -308,6 +308,7 @@ public class Board extends JPanel implements Runnable, Commons {
 		        	vel = 3;
 		        	gravidade = 10 * nivel;
 		        	deaths = 0;
+		        	col = 1; row = 1;
 		        	spawnAliens();
 		        	spawnAliens();
 		    		level++;
@@ -375,7 +376,7 @@ public class Board extends JPanel implements Runnable, Commons {
                         	alien.setDying(true);
                         }
                         
-                        if(level <= 2)
+                        if(level <= 3)
                         	score += 20;
                         if(score % 200 == 0){
                         	vidas++;
